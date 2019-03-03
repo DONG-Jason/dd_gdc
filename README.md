@@ -24,7 +24,7 @@ pip install -r requirements.txt
 - In directory __data__ can be found data downloaded using __data/gdc_manifest.2019-03-01.txt__ manifest file.
   - Out of 27 files from gdc_manifest.2019-03-01.txt : successfully downloaded: 12 and failed downloads: 15.
 - In directory __data_hn__ can be found (head and neck cancer) data downloaded using __data_hn/gdc_manifest.2019-03-03.txt__ manifest file.
-  - Out of 27 files from gdc_manifest.2019-03-03.txt : successfully downloaded: 132 and failed downloads: 186.
+  - Out of 318 files from gdc_manifest.2019-03-03.txt : successfully downloaded: 132 and failed downloads: 186.
  
 
 ## Data preprocessing and running 
