@@ -27,7 +27,7 @@ pip install -r requirements.txt
 
 - Reproducing analysis by running the dd_gdc.py script
 ```
-python dd_gdc/dd_gdc.py data_hn/ .maf.gz all
+python dd_gdc/dd_gdc.py data_hn/ .maf.gz all out_dir_hn
 ```
 
 
