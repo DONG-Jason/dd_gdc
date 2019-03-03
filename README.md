@@ -22,6 +22,8 @@ pip install -r requirements.txt
 ```
 ## Data preprocessing
 
+- Data selected, as illustrated above in animated figure, has been downloaded and it is available in shared Google Drive folder (data_hn)
+
 
 ## Reproducing results
 
