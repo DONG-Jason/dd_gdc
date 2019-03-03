@@ -47,6 +47,8 @@ python dd_gdc/dd_gdc.py data_hn/ .maf.gz all out_dir_hn
 - It would be easier to reproduce results if README.md file in [delmh](https://github.com/xqrongm/delmh) repository contains more information about following things:
   - What type of input files it accepts?
   - What are input files besides .maf files
-  - Description of algorithm maybe in the form of some kind of flowchart (an example of that in __docs/mh_diagram.jpg__)
+  - Description of algorithm [delmh](https://github.com/xqrongm/delmh) maybe in the form of some kind of flowchart (an example of that in __docs/mh_diagram.jpg__)
+  - The sentence "The .maf files used were downloaded from the Genomic Data Commons Data Portal (https://
+portal.gdc.cancer.gov/)." could be a bit more detailed in terms of how actually data is downloaded. Maybe a written description of the animated gif I provided above where information about the exact path of how data is downloaded.
   - Command provided in the current README.md file is not informative enough and it could be potentially reduced
   - In the long run this algorithm could be converted to a web-based application or an executable program
