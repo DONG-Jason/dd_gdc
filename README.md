@@ -12,8 +12,9 @@ pip install -r requirements.txt
 - Data download is illustrated in the animation below: ![](dd.gif)
 
 - The step-by-step approach for data download:
-  - Downloading GDC client tool for data transfer. GDC client tool can be downloaded from [here]()
-  - 
+  - Downloading GDC client tool for data transfer. GDC client tool can be downloaded from [here](https://gdc.cancer.gov/access-data/gdc-data-transfer-tool)
+  - The next step is to download the correspoding manifest file for head and neck cancer data. How to download the manifest file for head and neck cancer data is illustrated in visul below ![](dd.gif)
+  
 ## Data preprocessing
 
 ## Reproducing results
