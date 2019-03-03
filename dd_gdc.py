@@ -4,6 +4,7 @@ import os
 DATA = sys.argv[1]  #
 EXT = sys.argv[2]
 NUMBER_FILES = sys.argv[3]
+OUT = sys.argv[4]
 
 
 def get_mafs(data_dir, ext):
@@ -16,14 +17,14 @@ def get_mafs(data_dir, ext):
 
 
 def move_mafs(maf_files):
-    if "out_dir" in os.listdir():
+    if OUT in os.listdir():
         for file in maf_files:
-            os.system(f"cp {file} out_dir")
+            os.system(f"cp {file} {OUT}")
     else:
-        os.mkdir("out_dir")
+        os.mkdir(OUT)
         for file in maf_files:
-            os.system(f"cp {file} out_dir")
-    for path, subdir, files in os.walk("out_dir"):
+            os.system(f"cp {file} {OUT}")
+    for path, subdir, files in os.walk(OUT):
         zip_mafs = [os.path.join(path, maf) for maf in files if maf.endswith("maf.gz")]
         print(zip_mafs)
         for zip_file in zip_mafs:
