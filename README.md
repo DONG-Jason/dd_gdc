@@ -20,24 +20,37 @@ pip install -r requirements.txt
 # An example
 ./gdc-client download -m gdc_manifest.2019-03-03.txt
 ```
-## Data preprocessing
 
-- Data selected, as illustrated above in animated figure, has been downloaded and it is available in shared Google Drive folder (data_hn)
+- In directory __data__ can be found data downloaded using __data/gdc_manifest.2019-03-01.txt__ manifest file.
+  - Out of 27 files from gdc_manifest.2019-03-01.txt : successfully downloaded: 12 and failed downloads: 15.
+- In directory __data_hn__ can be found (head and neck cancer) data downloaded using __data_hn/gdc_manifest.2019-03-03.txt__ manifest file.
+  - Out of 27 files from gdc_manifest.2019-03-03.txt : successfully downloaded: 132 and failed downloads: 186.
+ 
 
+## Data preprocessing and running 
 
-## Reproducing results
-
-- Reproducing analysis by running the dd_gdc.py script
+- Data selected, as illustrated above in animated figure, has been downloaded and it is available in shared Google Drive folder (__data_hn__). 
+- Files (.maf) in this directory have been used as input data from __dd_gdc/dd_gdc.py__ script.
+This script can be run using the following command:
 ```
+# data_hn/: directory with input .maf files
+# file extension of input files: .maf.gz
+# all: all files from input directory (data_hn)
+# out_dir_hn: directory with output files
 python dd_gdc/dd_gdc.py data_hn/ .maf.gz all out_dir_hn
 ```
+- The script bascially does some basic file manipulation and runs the [delmh](https://github.com/xqrongm/delmh) microhomology tool on the .maf files in:
+  - __data__ directory and outputs results to __out_dir__
+  - __data_hn__ directory and outputs results to __out_dir_hn__
+  
+## Reproducing results and general comments and suggestions
+- It would be easier to reproduce results if README.md file in [delmh](https://github.com/xqrongm/delmh) repository contains more information about following things:
+  - What type of input files it accepts?
+  - What are input files besides .maf files
+  - Description of algorithm maybe in the form of some kind of flowchart (an example of that in __docs/mh_diagram.jpg__)
+  - Command provided in the current README.md file is not informative enough and it could be potentially reduced
+  - In the long run this algorithm could be converted to a web-based application or an executable program
 
-
-## General comments and suggestions
-
-## Data download:
-- Successfully downloaded: 12
-- Failed downloads: 15
 
 
 
