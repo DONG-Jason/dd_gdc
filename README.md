@@ -32,11 +32,11 @@ pip install -r requirements.txt
 - Data selected, as illustrated above in animated figure, has been downloaded and it is available in shared Google Drive folder (__data_hn__). 
 - Files (.maf) in this directory have been used as input data from __dd_gdc/dd_gdc.py__ script.
 This script can be run using the following command:
+  - __data_hn/__: directory with input .maf files
+  - __.maf.gz__: file extension of input files
+  - __all__: all files from input directory (data_hn)
+  - __out_dir_hn__: directory with output files
 ```
-# data_hn/: directory with input .maf files
-# file extension of input files: .maf.gz
-# all: all files from input directory (data_hn)
-# out_dir_hn: directory with output files
 python dd_gdc/dd_gdc.py data_hn/ .maf.gz all out_dir_hn
 ```
 - The script bascially does some basic file manipulation and runs the [delmh](https://github.com/xqrongm/delmh) microhomology tool on the .maf files in:
@@ -50,7 +50,3 @@ python dd_gdc/dd_gdc.py data_hn/ .maf.gz all out_dir_hn
   - Description of algorithm maybe in the form of some kind of flowchart (an example of that in __docs/mh_diagram.jpg__)
   - Command provided in the current README.md file is not informative enough and it could be potentially reduced
   - In the long run this algorithm could be converted to a web-based application or an executable program
-
-
-
-
